@@ -1,0 +1,733 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #FFD5A9 ;
+}
+#productos-container {
+display: flex;
+flex-wrap: wrap;
+gap:  10px;
+justify-content: center;
+margin-top: 20px;
+
+}
+.tarjeta-producto img{
+	width: 200px;
+	height: 200px;
+}
+.head {
+	width: 100%;
+	height: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #03FFF9;
+	z-index: 2;
+	top: 0%;
+
+}
+
+.headimg img {
+	width: 80px;
+	height: 90px;
+	border-radius: 20%;
+	display: flex;
+	margin-left: 10px;
+	margin-right: 2px;
+	align-content: flex-end;
+	justify-content: space-around;
+	
+}
+@font-face {
+	font-family: planeta;
+	src: url(Comic.ttf);
+}
+@font-face {
+	font-family: sister;
+	src: url(Sister.ttf);
+}
+@font-face {
+	font-family: spray;
+	src: url(Spray.otf);
+}
+.marca {
+	display: inline-block;
+	flex: wrap;
+	justify-content: space-around;
+	position: relative;
+}
+
+.conT1 {
+	width: 250px;
+	height: 40px;
+    position: relative;
+    background-color:;
+    top:30px;
+    
+
+}
+.conT2 {
+    width: 150px;
+    height: 30px;
+	position: relative;
+	top: 26px;
+	left: 150px;
+	background-color:;
+}
+.conT1 h1 {
+     font-size: 20px;
+     font-family: sister;
+     
+}
+.conT2 h2 {
+	font-size: 10px;
+	font-family: sister;
+	
+}
+@font-face {
+	font-family: planeta;
+	src: url(Comic.ttf);
+}
+.carrito {
+	margin-left: 1300px;
+	margin-top: 50px;
+	position: absolute;
+	cursor: pointer;
+}
+/*
+.section1 {
+	width: 100%;
+	height: 30px;
+	background-color: #808080;
+	font-weight: bold;
+	font-family: planeta;
+	font-size: 20px;
+	text-align: center;
+	
+}
+.section {
+	width: 100%;
+	height: 20px;
+	background-color: #808080;
+	font-weight: bold;
+	font-family: planeta;
+	font-size: 20px;
+	text-align: center;
+}
+.count-products{
+	width: 300px;
+	height: 300px;
+	right: 300px;
+	position: relative;
+    z-index: 1;
+    background-color: #ffff ;
+}
+.contremeras {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: #D1D6F8;
+	padding: 20px;
+}
+.padre1,
+.padre2,
+.padre3 {
+	width: 300px;
+	height: 450px;
+	background-color: grey;
+}
+@media (max-width: 990px) {
+	
+	.contremeras {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+	.padre1,
+    .padre2,
+    .padre3 {
+    	width: 300px;
+    	height: 450px;
+    	margin: 2px;
+}				
+	.padre1,
+    .padre2,
+    .padre3 img {
+    	height: 80%;
+			}
+	.hijo1,
+	.hijo2,
+	.hijo3 {
+		width: 100%;
+		height: 20%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+.padre1 img {
+	width: 300px;
+	height:350px;
+	object-fit: cover;
+}
+.padre2 img {
+	width: 300px;
+	height: 350px;
+	object-fit: cover;
+}
+.padre3 img {
+	width: 300px;
+	height: 350px;
+	object-fit: cover;
+}
+.hijo1 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;	
+}
+.hijo2 {
+	width: 100%;
+	height: 100px;
+	background-color: green;
+	position: relative;
+    
+}
+.hijo3 {
+	width: 100%;
+	height: 100px;
+	background-color: green;
+	position: relative;
+     
+}
+.contcalzas {
+	width: 100%;
+	height: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: blue;
+	padding: 20px;
+}
+@media (max-width: 990px) {
+	.contcalzas {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+	.padre4,
+    .padre5,			
+	.padre6,
+    .padre7,
+    .padre8  {
+    	width: 300px;
+    	height: 450px;
+    	margin: 2px;   	
+}	
+	
+	.padre4,
+    .padre5,			
+	.padre6,
+    .padre7,
+    .padre8 img {
+    	height: 80%;
+			}
+	.hijo4,
+	.hijo5,
+	.hijo6,
+	.hijo7,
+	.hijo8 {
+		width: 100%;
+		height: 20%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+.padre4,
+.padre5,
+.padre6,
+.padre7,
+.padre8 {
+	width: 300px;
+	height: 450px;
+	margin: 0px 20px 0px 20px; 
+}
+.padre4 img {
+	width: 300px;
+	height: 350px;
+	object-fit: cover;
+}
+.padre5 img {
+	width: 300px;
+	height: 350px;
+	object-fit: cover;
+}
+.padre6 img {
+	width: 300px;
+	height: 350px;
+	object-fit: cover;
+}
+.padre7 img {
+	width: 300px;
+	height: 350px;
+	object-fit: cover;
+}
+.padre8 img {
+	width: 300px;
+	height: 350px;
+	object-fit: cover;
+}
+.hijo4 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;
+}
+.hijo5 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;  
+}
+.hijo6 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;   
+}
+.hijo7 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;   
+}
+.hijo8 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;
+     
+}
+.contcuellitos {
+	width: 100%;
+	height: 1500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: yellow;
+	padding: 20px;
+	object-fit: cover;
+}
+@media (max-width: 990px) {
+	.contcuellitos {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+	.padre9,
+    .padre10,
+    .padre11,
+    .padre12,
+    .padre13,
+    .padre14,
+    .padre15  {
+    	width: 300px;
+    	height: 450px;
+    	margin: 2px;   	
+}	
+	
+	.padre9,
+    .padre10,
+    .padre11,
+    .padre12,
+    .padre13,
+    .padre14,
+    .padre15 img {
+    	height: 80%;
+			}
+
+	.hijo9,
+	.hijo10,		
+	.hijo11,
+	.hijo12,
+	.hijo13,
+	.hijo14,
+	.hijo15 {
+		width: 100%;
+		height: 20%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+.padre9,
+.padre10,
+.padre11,
+.padre12,
+.padre13,
+.padre14,
+.padre15  {
+	width: 300px;
+	height: 450px;
+	margin: 0px 20px 0px 20px; 
+}
+.padre9 img {
+	width: 300px;
+	height: 350px;
+}
+.padre10 img {
+	width: 300px;
+	height: 350px;
+}
+.padre11 img {
+	width: 300px;
+	height: 350px;
+}
+.padre12 img {
+	width: 300px;
+	height: 350px;
+}
+.padre13 img {
+	width: 300px;
+	height: 350px;
+}
+.padre14 img {
+	width: 300px;
+	height: 350px;
+}
+.padre15 img {
+	width: 300px;
+	height: 350px;
+}
+.hijo9 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;
+}
+.hijo10 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;  
+}
+.hijo11 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;   
+}
+.hijo12 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;   
+}
+.hijo13 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;
+     
+}
+.hijo14 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;    
+}
+.hijo15 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;    
+}
+
+.contaccesorios {
+	width: 100%;
+	height: 1500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: orange;
+	padding: 20px;
+	object-fit: cover;
+}
+@media (max-width: 990px) {
+	.contaccesorios {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+	.padre16,
+    .padre17,
+    .padre18,
+    .padre19,
+    .padre20,
+    .padre21,
+    .padre22,
+    .padre23 {
+    	width: 300px;
+    	height: 450px;
+    	margin: 2px;   	
+}	
+	
+	.padre16,
+    .padre17,
+    .padre18,
+    .padre19,
+    .padre20,
+    .padre21,
+    .padre22,
+    .padre23 img {
+    	height: 80%;
+			}
+	.hijo16,
+	.hijo17,
+	.hijo18,
+	.hijo19,
+	.hijo20,
+	.hijo21,
+	.hijo22,
+	.hijo23 {
+		width: 100%;
+		height: 20%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+.padre16,
+.padre17,
+.padre18,
+.padre19,
+.padre20,
+.padre21,
+.padre22,
+.padre23  {
+	width: 300px;
+	height: 450px;
+	margin: 0px 20px 0px 20px; 
+}
+.padre16 img {
+	width: 300px;
+	height: 350px;
+}
+.padre17 img {
+	width: 300px;
+	height: 350px;
+}
+.padre18 img {
+	width: 300px;
+	height: 350px;
+}
+.padre19 img {
+	width: 300px;
+	height: 350px;
+}
+.padre20 img {
+	width: 300px;
+	height: 350px;
+}
+.padre21 img {
+	width: 300px;
+	height: 350px;
+}
+.padre22 img {
+	width: 300px;
+	height: 350px;
+}
+.padre23 img {
+	width: 300px;
+	height: 350px;
+}
+.hijo16 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;
+}
+.hijo17 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;
+}
+.hijo18 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;  
+}
+.hijo19 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;   
+}
+.hijo20 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;   
+}
+.hijo21 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;
+     
+}
+.hijo22 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;    
+}
+.hijo23 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;    
+}
+.contmedias {
+	width: 100%;
+	height: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: blue;
+	padding: 20px;
+}
+@media (max-width: 990px) {
+	.contmedias {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+	.padre24,
+    .padre25,
+    .padre26,
+    .padre27,
+    .padre28,
+    .padre29  {
+    	width: 300px;
+    	height: 450px;
+    	margin: 2px;   	
+}	
+	
+	.padre24,
+    .padre25,
+    .padre26,
+    .padre27,
+    .padre28,
+    .padre29  img {
+    	height: 80%;
+			}
+	.hijo24,
+	.hijo25,
+	.hijo26,
+	.hijo27,
+	.hijo28,
+	.hijo29 {
+		width: 100%;
+		height: 20%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+
+.padre24,
+.padre25,
+.padre26,
+.padre27,
+.padre28,
+.padre29  {
+	width: 300px;
+	height: 450px;
+	margin: 20px;
+}
+.padre24 img {
+	width: 300px;
+	height: 350px;
+}
+.padre25 img {
+	width: 300px;
+	height: 350px;
+}
+.padre26 img {
+	width: 300px;
+	height: 350px;
+}
+.padre27 img {
+	width: 300px;
+	height: 350px;
+}
+.padre28 img {
+	width: 300px;
+	height: 350px;
+}
+.padre29 img {
+	width: 300px;
+	height: 350px;
+}
+.hijo24 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;  
+}
+.hijo25 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;   
+}
+.hijo26 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;   
+}
+.hijo27 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;
+     
+}
+.hijo28 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;    
+}
+.hijo29 {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color: green;    
+}
+.continteriordama {
+	width: 50%;
+	height: 100px;
+	background-color: violet;
+	margin: 10px 10px 10px 10px;
+}
+.continteriorhombre {
+	width: 50%;
+	height: 100px;
+	background-color: grey;
+	margin: 10px 10px 10px 10px;
+}
